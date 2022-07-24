@@ -1,21 +1,11 @@
 package util;
 
 public class Bank_account {
-    
+    private int amount;
+       
 
-
-
-
-
-
-
-
-
-
-
-
-
-    public int transfer(){
-        
+    void transfer(double amount){
+    }
+    void withdraw(double amount){
     }
 }
