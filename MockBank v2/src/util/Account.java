@@ -2,15 +2,22 @@ package util;
 
 public class Account {
     private double balance;
-    public String name;
+    private String name; // variavel de instancia
 
     public double getBalance(double balance)
     {
         this.balance = balance;
         return balance;
     }
-    void transfer(double balance){
+    //metodo para definir o nome no obj
+    public void setName(String name)
+    {
+        this.name = name; //armazena o nome
     }
-    void withdraw(double balance){
+    //metodo para recuperar o nome do obj
+    public String getName()
+    {
+        return name; //retorna o valor do nome
     }
+
 }
