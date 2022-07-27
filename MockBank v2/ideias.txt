@@ -1,0 +1,5 @@
+Seção para as ideias que eu tive e pretendo implementar.
+1º O usuário deve ter opção de escolher entre a conta premium, e a free.
+detalhamento: a conta premium irá ter mensalidade de $50, e a free, terá taxa de saque de $10 para cada saque.
+2º Mensalidade deve ser cobrada a cada 30 dias (utilizar threads e consultar tópicos especiais em data-hora)
+3º front end básico (botões, background, e uma tela simples) para visualizar as ações, em vez do console.

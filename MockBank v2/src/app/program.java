@@ -28,7 +28,7 @@ public class program {
         else{
             acc = new acc(number, holder);
         }
-        System.out.println("Account data: ");
+        System.out.println("Account data: " + acc);
 
     }
 }

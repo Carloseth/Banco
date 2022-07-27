@@ -38,5 +38,7 @@ public class acc {
     public void setHolder(String holder) {
         this.holder = holder;
     }
-
+    public String toString(){
+        return 
+    }
 }
