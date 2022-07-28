@@ -32,5 +32,20 @@ public class program {
         System.out.println("Account data: ");
         System.out.println(acc);
 
+        System.out.println("Enter a deposit value: " );
+        double depositValue = sc.nextDouble();
+        acc.deposit(depositValue);
+        System.out.println();
+        System.out.println("Updated account data: ");
+        System.out.println(acc);
+
+        System.out.println();
+        System.out.println("Enter a withdraw value: " );
+        double withdrawValue = sc.nextDouble();
+        acc.withdraw(withdrawValue);
+
+        System.out.println();
+        System.out.println("Updated account data: ");
+        System.out.println(acc);
     }
 }

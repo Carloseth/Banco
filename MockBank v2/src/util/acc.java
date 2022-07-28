@@ -41,6 +41,6 @@ public class acc {
     public String toString(){
         return "acc: " + number + ", "     
             + "holder: " + holder +  ", " 
-            + "Balance: " + balance ;
+            + "Balance: $" + String.format("%.2f", balance) ;
     }
 }
