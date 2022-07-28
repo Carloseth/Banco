@@ -39,6 +39,8 @@ public class acc {
         this.holder = holder;
     }
     public String toString(){
-        return 
+        return "acc: " + number + ", "     
+            + "holder: " + holder +  ", " 
+            + "Balance: " + balance ;
     }
 }
