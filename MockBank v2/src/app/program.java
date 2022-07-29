@@ -2,7 +2,8 @@ package app;
 
 import java.util.Locale;
 import java.util.Scanner;
-import util.acc;
+
+import entities.acc;
 
 public class program {
     public static void main(String[] args) {
