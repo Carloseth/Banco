@@ -10,42 +10,44 @@ public class program {
         Scanner sc = new Scanner(System.in);
         acc acc; // instance
 
-        System.out.println("Enter account number: ");
-        int number = sc.nextInt();
+        System.out.println("Insira o numero da conta: ");
+        int numero = sc.nextInt();
 
-        System.out.println("Enter account holder: ");
+        System.out.println("Digite o nome do usuario: ");
         sc.nextLine();
-        String holder = sc.nextLine();
+        String usuario = sc.nextLine();
 
-        System.out.println("Is there a deposit initial? (y/n) ?");
+        System.out.println("Depósito inicial (s/n) ?");
         char response = sc.next().charAt(0);
 
-        if(response == 'y'){
-            System.out.println("Enter the initial deposit value: ");
-            double initialDeposit = sc.nextDouble();
-            acc = new acc(number, holder, initialDeposit);
+        if(response == 's'){
+            System.out.println("Insira o valor do deposito inicial: ");
+            double depositoInicial = sc.nextDouble();
+            acc = new acc(numero, usuario, depositoInicial);
         }
         else{
-            acc = new acc(number, holder);
+            acc = new acc(numero, usuario);
         }
         System.out.println();
-        System.out.println("Account data: ");
+        System.out.println("Dados da conta: ");
         System.out.println(acc);
 
-        System.out.println("Enter a deposit value: " );
-        double depositValue = sc.nextDouble();
-        acc.deposit(depositValue);
+        System.out.println("Insira um valor para deposito: " );
+        double valorDeposito = sc.nextDouble();
+        
+        acc.deposit(valorDeposito);
         System.out.println();
-        System.out.println("Updated account data: ");
+        System.out.println("Dados atualizados: ");
         System.out.println(acc);
 
         System.out.println();
-        System.out.println("Enter a withdraw value: " );
-        double withdrawValue = sc.nextDouble();
-        acc.withdraw(withdrawValue);
+        System.out.println("Insira o valor desejado para saque: " );
+        double valorSaque = sc.nextDouble();
+        acc.saque(valorSaque);
 
         System.out.println();
-        System.out.println("Updated account data: ");
+        System.out.println("Dados atualizados: ");
         System.out.println(acc);
+        sc.close();
     }
 }

@@ -1,46 +1,46 @@
 package util;
 
 public class acc {
-    private int number;
-    private String holder;
-    private double balance;
+    private int numero;
+    private String usuario;
+    private double saldo;
 
-    public acc(int number, String holder){
-        this.number = number;
-        this.holder = holder;
+    public acc(int numero, String usuario){
+        this.numero = numero;
+        this.usuario = usuario;
     }
 
-    public acc(int number, String holder, double initialDeposit){
-        this.number = number;
-        this.holder = holder;
-        deposit(initialDeposit); //caso a regra de negócio mude, alterar o método deposito apenas.
+    public acc(int numero, String usuario, double valorDeposito){
+        this.numero = numero;
+        this.usuario = usuario;
+        deposit(valorDeposito); //caso a regra de negócio mude, alterar o método deposito apenas.
     }
     
     public void deposit(double amount){
-        balance += amount;
+        saldo += amount;
     }
-    public void withdraw(double amount){
-        balance -= amount;
-    }
-    
-    public int getNumber() {
-        return number;
-    }
-
-    public String getHolder() {
-        return holder;
+    public void saque(double amount){
+        saldo -= amount;
     }
     
-    public double getBalance() {
-        return balance;
+    public int getnumero() {
+        return numero;
     }
 
-    public void setHolder(String holder) {
-        this.holder = holder;
+    public String getusuario() {
+        return usuario;
+    }
+    
+    public double getsaldo() {
+        return saldo;
+    }
+
+    public void setusuario(String usuario) {
+        this.usuario = usuario;
     }
     public String toString(){
-        return "acc: " + number + ", "     
-            + "holder: " + holder +  ", " 
-            + "Balance: $" + String.format("%.2f", balance) ;
+        return "conta: " + numero + ", "     
+            + "usuario: " + usuario +  ", " 
+            + "saldo: $" + String.format("%.2f", saldo) ;
     }
 }
